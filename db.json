@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "name": "eeeee",
+      "nbParticipant": 0,
+      "price": 0,
+      "Category": "event_moderne",
+      "id": 1
+    },
+    {
+      "name": "tt",
+      "nbParticipant": 0,
+      "price": 0,
+      "Category": "event_moderne",
+      "id": 2
+    },
+    {
+      "name": "fff",
+      "nbParticipant": 0,
+      "price": 0,
+      "Category": "event_culturel",
+      "id": 3
+    }
+  ]
+}

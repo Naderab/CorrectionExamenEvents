@@ -1,0 +1,19 @@
+Search : <input [formControl]="searchText">
+<button (click)="Search()">Search</button>
+<table>
+    <tr>
+        <td>name</td>
+        <td>nbParticipant</td>
+        <td>price</td>
+        <td>Category</td>
+        <td>id</td>
+    </tr>
+    <tr *ngFor="let obj of listEventsFiltred">
+        <td>{{obj.name}}</td>
+        <td>{{obj.nbParticipant}}</td>
+        <td>{{obj.price}}</td>
+        <td>{{obj.Category}}</td>
+        <td>{{obj.id}}</td>
+        <td><button (click)="deleteEvent(obj.id)">Delete</button></td>
+    </tr>
+</table>

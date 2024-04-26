@@ -1,0 +1,20 @@
+<form [formGroup]="event">
+    Name : <input formControlName="name">
+
+    NbParticipants : <input type="number" formControlName="nbParticipant">
+        <div style="color: red;"
+            *ngIf="event.get('nbParticipant')!.invalid && (event.get('nbParticipant')!.touched || event.get('nbParticipant')!.dirty)">
+            la valeur max du nbParticipant égale à 1000
+        </div>
+    Price : <input type="number" formControlName="price">
+    <div style="color: red;"
+        *ngIf="event.get('price')!.invalid && (event.get('price')!.touched || event.get('price')!.dirty)">
+        prix doit être positif
+    </div>
+    category <input formControlName="Category">
+        <div style="color: red;"
+            *ngIf="event.get('Category')!.invalid && (event.get('Category')!.touched || event.get('Category')!.dirty)">
+            Category-event peut avoir comme valeurs event_traditionnel, event_culturel et event_moderne
+        </div>
+    <input type="submit" (click)="add()">
+</form>
